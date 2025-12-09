@@ -1,0 +1,81 @@
+###############################
+# Office / Excel
+###############################
+
+# Archivos temporales de Excel
+~$*.xls*
+*.tmp
+*.bak
+*.backup
+
+# Archivos Excel generados automáticamente
+*.xlsx
+*.xlsm
+*.xlsb
+*.xltm
+*.xlk
+
+# Archivos de bloqueo
+*.laccdb
+*.ldb
+
+###############################
+# VBA modules
+###############################
+# (Permitimos .bas, .cls y .frm porque son código,
+# ignoramos binarios exportados automáticamente)
+
+*.frx
+
+###############################
+# CSV / Logs generados por la pipeline
+###############################
+
+# CSV generados por procesos automáticos
+output/*.csv
+temp/*.csv
+*.csv
+
+# Logs
+*.log
+logs/
+*.txt
+
+###############################
+# Carpetas de trabajo / temporales
+###############################
+
+tmp/
+temp/
+backup/
+dist/
+build/
+
+###############################
+# Configuración de IDEs / Editores
+###############################
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+
+# Python virtual env por si incorporas scripts
+venv/
+.env/
+__pycache__/
+
+###############################
+# Sistema operativo
+###############################
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
